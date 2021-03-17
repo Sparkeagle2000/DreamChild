@@ -10,10 +10,13 @@ public class PlayerController001 : MonoBehaviour
     public float fireRate;
     public KeyCode fire;
     public KeyCode jump;
+    public KeyCode growth;
 
     private float nextFire;
     public Rigidbody rb;
     public bool onGround=true;
+    public bool grow=true;
+    public bool normal=false;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,11 +36,26 @@ public class PlayerController001 : MonoBehaviour
                 onGround=false;
             }
                 //Attack script for attack
-            //if (Input.GetKeyDown(fire) && Time.time > nextFire)
-            //{
-            //    nextFire=Time.time+fireRate;
-            //    Instantiate (shot, shotSpawn.position, shotSpawn.rotation);
-            //}
+            if (Input.GetKeyDown(fire) && Time.time > nextFire)
+            {
+                nextFire=Time.time+fireRate;
+                Instantiate (shot, shotSpawn.position, shotSpawn.rotation);
+            }
+        if(Input.GetKeyDown(growth))
+        {
+            if(grow)
+            {
+                transform.localScale=new Vector3(3,3,3);
+                grow=false;
+                normal=true;
+            }
+            else if(normal)
+            {
+                transform.localScale=new Vector3(1,1,1);
+                grow=true;
+                normal=false;
+            }
+        }
     }
 
     private void OnCollisionEnter(Collision other)

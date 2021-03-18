@@ -48,13 +48,13 @@ public class PlayerController001 : MonoBehaviour
         {
             if(growth)
             {
-                transform.localScale+=new Vector3(3,3,3);
+                transform.localScale=new Vector3(3,3,3);
                 growth=false;
                 normal=true;
             }
-            if(normal)
+            else if(normal)
             {
-                transform.localScale-=new Vector3(1,1,1);
+                transform.localScale=new Vector3(1,1,1);
                 normal=false;
                 growth=true;
             }

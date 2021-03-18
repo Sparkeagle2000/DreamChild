@@ -14,9 +14,12 @@ public class PlayerController001 : MonoBehaviour
     private float nextFire;
     public Rigidbody rb;
     public bool onGround=true;
+
+    private TimeManager timemanager;
     // Start is called before the first frame update
     void Start()
     {
+        timemanager = GameObject.FindGameObjectWithTag("TimeManager").GetComponent<TimeManager>();
         //rb=GetComponent<Rigidbody>();
     }
 
@@ -38,6 +41,17 @@ public class PlayerController001 : MonoBehaviour
             //    nextFire=Time.time+fireRate;
             //    Instantiate (shot, shotSpawn.position, shotSpawn.rotation);
             //}
+
+        if(Input.GetKeyDown(KeyCode.Q)) 
+        {
+            timemanager.StopTime();
+
+        }
+        if(Input.GetKeyDown(KeyCode.E) && timemanager.TimeIsStopped) 
+        {
+            timemanager.ContinueTime();
+
+        }   
     }
 
     private void OnCollisionEnter(Collision other)

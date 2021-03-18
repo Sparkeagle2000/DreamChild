@@ -14,6 +14,8 @@ public class PlayerController001 : MonoBehaviour
     private float nextFire;
     public Rigidbody rb;
     public bool onGround=true;
+    public bool growth=true;
+    public bool normal=false;
 
     private TimeManager timemanager;
     // Start is called before the first frame update
@@ -36,11 +38,27 @@ public class PlayerController001 : MonoBehaviour
                 onGround=false;
             }
                 //Attack script for attack
-            //if (Input.GetKeyDown(fire) && Time.time > nextFire)
-            //{
-            //    nextFire=Time.time+fireRate;
-            //    Instantiate (shot, shotSpawn.position, shotSpawn.rotation);
-            //}
+            if (Input.GetKeyDown(fire) && Time.time > nextFire)
+            {
+                nextFire=Time.time+fireRate;
+                Instantiate (shot, shotSpawn.position, shotSpawn.rotation);
+            }
+        
+        if(Input.GetKeyDown(KeyCode.F))
+        {
+            if(growth)
+            {
+                transform.localScale+=new Vector3(3,3,3);
+                growth=false;
+                normal=true;
+            }
+            if(normal)
+            {
+                transform.localScale-=new Vector3(1,1,1);
+                normal=false;
+                growth=true;
+            }
+        }
 
         if(Input.GetKeyDown(KeyCode.Q)) 
         {

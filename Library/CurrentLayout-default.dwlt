@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 949
     height: 981
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 147
+  controlID: 16
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 14003, y: 14042}
   vertical: 1
-  controlID: 148
+  controlID: 17
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 149
+  controlID: 18
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_MinSize: {x: 333, y: 271}
   m_MaxSize: {x: 14003, y: 10021}
   vertical: 0
-  controlID: 60
+  controlID: 45
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -513,9 +513,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.8621497, y: 30.73194, z: 91.10504}
+    m_Target: {x: 13.585343, y: 26.133661, z: 55.556953}
     speed: 2
-    m_Value: {x: 1.8621497, y: 30.73194, z: 91.10504}
+    m_Value: {x: 13.585343, y: 26.133661, z: 55.556953}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -562,13 +562,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.5547322, y: 0.38252103, z: -0.31821975, w: 0.66681933}
+    m_Target: {x: 0.47308037, y: 0.5013121, z: -0.3873497, w: 0.61218256}
     speed: 2
-    m_Value: {x: 0.5547322, y: 0.38252103, z: -0.31821978, w: 0.66681933}
+    m_Value: {x: 0.47217894, y: 0.50191104, z: -0.38661164, w: 0.61291414}
   m_Size:
-    m_Target: 15.996387
+    m_Target: 17.302347
     speed: 2
-    m_Value: 15.996387
+    m_Value: 17.302347
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -696,20 +696,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Materials
+    - Assets/Scenes
     m_Globs: []
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Materials
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\mjpla\Downloads\DreamChild-main\DreamChild-main
+  m_LastProjectPath: C:\Users\mjpla\Downloads\DreamChild-main (1)\DreamChild-main
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 96380000
-    m_LastClickedID: 14486
+    m_SelectedIDs: 98380000
+    m_LastClickedID: 14488
     m_ExpandedIDs: 000000009238000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -848,7 +848,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -31052
+  m_LastSelectedObjectID: -24316
 --- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52

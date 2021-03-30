@@ -2,11 +2,9 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - AttackMover
-    - BearWin
     - CameraController001
     - ChanclaPush
     - ChanclaScript
-    - EnemySpot
     - FloatingBlocks
     - PlayerController001
     - TimeBody
@@ -16,8 +14,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -53,10 +53,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
-    - Class: 82
-      Script: {instanceID: 0}
-    - Class: 83
-      Script: {instanceID: 0}
     - Class: 90
       Script: {instanceID: 0}
     - Class: 91
@@ -70,23 +66,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11748}
     - Class: 114
-      Script: {instanceID: 11936}
+      Script: {instanceID: 12090}
     - Class: 114
-      Script: {instanceID: 12092}
+      Script: {instanceID: 12550}
     - Class: 114
-      Script: {instanceID: 12552}
+      Script: {instanceID: 12666}
     - Class: 114
-      Script: {instanceID: 12668}
+      Script: {instanceID: 12974}
     - Class: 114
-      Script: {instanceID: 12976}
+      Script: {instanceID: 13036}
     - Class: 114
-      Script: {instanceID: 13038}
+      Script: {instanceID: 13252}
     - Class: 114
-      Script: {instanceID: 13254}
-    - Class: 114
-      Script: {instanceID: 13788}
-    - Class: 114
-      Script: {instanceID: 13828}
+      Script: {instanceID: 13822}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 136
@@ -98,8 +90,6 @@ ScriptsOnlyBuild:
     - Class: 195
       Script: {instanceID: 0}
     - Class: 196
-      Script: {instanceID: 0}
-    - Class: 238
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -180,12 +170,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: TouchInputModule
-  - hash:
-      serializedVersion: 2
-      Hash: 65b3a3b9a7779d539ec75a3ceddebdba
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: EnemySpot
   - hash:
       serializedVersion: 2
       Hash: a6e561615949734e9f12f9b61661f43e
@@ -440,7 +424,7 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
-      Hash: 59465b1712d8e2f73c0966e688491f6f
+      Hash: db2ac3479bc9921d4dcba311a59277c5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController001
@@ -468,12 +452,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools
     className: BeforeAfterTestCommandState
-  - hash:
-      serializedVersion: 2
-      Hash: 70ae6fd5f3ca4d0434bb9937a9c31c45
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CameraRotator
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -572,12 +550,6 @@ ScriptsOnlyBuild:
     className: SignalEmitter
   - hash:
       serializedVersion: 2
-      Hash: 3bd6b5be176faa2b39a65a24be83ae72
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: BearWin
-  - hash:
-      serializedVersion: 2
       Hash: 0c05f2bfb402def3f0a85a62a2323c7f
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -603,4 +575,4 @@ ScriptsOnlyBuild:
   platform: 5
   scenePathNames:
   - Assets/Scenes/Nightmare Stage.unity
-  playerPath: C:/Users/cemcg/Desktop/Dream_Child/DreamChild.exe
+  playerPath: C:/Users/cemcg/Desktop/DreamChild/DreamChild.exe

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FloatingBlocks : MonoBehaviour
 {
+    TimeManager timemanager;
     Vector3 up, down;
     float offset;
     float speed=0.0f;
@@ -11,36 +12,44 @@ public class FloatingBlocks : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        offset=Random.Range(0.0f,0.5f);
-        up=new Vector3(transform.position.x, transform.position.y+0.5f+offset, transform.position.z);
-        down=new Vector3(transform.position.x, transform.position.y-0.5f-offset, transform.position.z);
+        timemanager = GameObject.FindGameObjectWithTag("TimeManager").GetComponent<TimeManager>();
+        offset=Random.Range(0.0f,1.0f);
+        up=new Vector3(transform.position.x, transform.position.y+0.2f+offset, transform.position.z);
+        down=new Vector3(transform.position.x, transform.position.y-0.2f-offset, transform.position.z);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(speed<0.8f)
+        if(timemanager.TimeIsStopped)
         {
-            speed+=Time.deltaTime/2;
+
         }
-        if(forward)
+        else
         {
-            transform.position = Vector3.Lerp (transform.position,new Vector3(up.x,up.y,up.z), Time.deltaTime * speed);
-            if (Vector3.Distance (transform.position, up) < 0.1 )
+            if(speed<0.8f)
             {
-                forward = false;
-                back=true;
-                speed=0.0f;
+                speed+=Time.deltaTime/2;
             }
-        }
-        if(back)
-        {
-            transform.position = Vector3.Lerp (transform.position,new Vector3(down.x,down.y,down.z), Time.deltaTime * speed);
-            if (Vector3.Distance (transform.position, down) < 0.1 )
+            if(forward)
             {
-                forward = true;
-                back=false;
-                speed=0.0f;
+                transform.position = Vector3.Lerp (transform.position,new Vector3(up.x,up.y,up.z), Time.deltaTime * speed);
+                if (Vector3.Distance (transform.position, up) < 0.1 )
+                {
+                    forward = false;
+                    back=true;
+                    speed=0.0f;
+                }
+            }
+            if(back)
+            {
+                transform.position = Vector3.Lerp (transform.position,new Vector3(down.x,down.y,down.z), Time.deltaTime * speed);
+                if (Vector3.Distance (transform.position, down) < 0.1 )
+                {
+                    forward = true;
+                    back=false;
+                    speed=0.0f;
+                }
             }
         }
     }

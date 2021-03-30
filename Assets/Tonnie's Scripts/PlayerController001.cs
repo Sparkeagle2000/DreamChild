@@ -10,6 +10,7 @@ public class PlayerController001 : MonoBehaviour
     public float fireRate;
     public KeyCode fire;
     public KeyCode jump;
+    public AudioSource walk;
 
     private float nextFire;
     public Rigidbody rb;
@@ -34,7 +35,7 @@ public class PlayerController001 : MonoBehaviour
             transform.Translate(new Vector3(horizontal, 0, vertical) * (speed * Time.deltaTime));
             if(Input.GetKeyDown(jump)&&onGround)
             {
-                Debug.Log("jumping");
+                //Debug.Log("jumping");
                 rb.AddForce(new Vector3(0,7,0), ForceMode.Impulse);
                 onGround=false;
             }
@@ -75,7 +76,7 @@ public class PlayerController001 : MonoBehaviour
         {
             timemanager.ContinueTime();
         }
-        if(!timemanager.TimeIsStopped) 
+        if(!timemanager.TimeIsStopped && count<5.0f) 
         {
             count+=Time.deltaTime;
 
@@ -85,6 +86,12 @@ public class PlayerController001 : MonoBehaviour
             count-=Time.deltaTime;
 
         }   
+        if(horizontal>0.1f||vertical>0.1f)
+        walk.Play();
+        else
+        {
+            walk.Stop();
+        }
     }
 
     private void OnCollisionEnter(Collision other)

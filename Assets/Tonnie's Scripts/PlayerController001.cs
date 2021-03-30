@@ -22,7 +22,7 @@ public class PlayerController001 : MonoBehaviour
     void Start()
     {
         timemanager = GameObject.FindGameObjectWithTag("TimeManager").GetComponent<TimeManager>();
-        //rb=GetComponent<Rigidbody>();
+        rb=GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -44,7 +44,7 @@ public class PlayerController001 : MonoBehaviour
                 Instantiate (shot, shotSpawn.position, shotSpawn.rotation);
             }
         
-        if(Input.GetKeyDown(KeyCode.F))
+        /*if(Input.GetKeyDown(KeyCode.F))
         {
             if(growth)
             {
@@ -58,7 +58,7 @@ public class PlayerController001 : MonoBehaviour
                 normal=false;
                 growth=true;
             }
-        }
+        }*/
 
         if(Input.GetKeyDown(KeyCode.Q)) 
         {

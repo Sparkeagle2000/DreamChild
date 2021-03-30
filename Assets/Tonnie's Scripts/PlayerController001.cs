@@ -18,6 +18,8 @@ public class PlayerController001 : MonoBehaviour
     public bool growth=true;
     public bool normal=false;
     public float count=5.0f;
+    public AudioClip footsteps;
+    bool music=false;
 
     private TimeManager timemanager;
     // Start is called before the first frame update
@@ -25,6 +27,7 @@ public class PlayerController001 : MonoBehaviour
     {
         timemanager = GameObject.FindGameObjectWithTag("TimeManager").GetComponent<TimeManager>();
         rb=GetComponent<Rigidbody>();
+
     }
 
     // Update is called once per frame
@@ -86,11 +89,15 @@ public class PlayerController001 : MonoBehaviour
             count-=Time.deltaTime;
 
         }   
-        if(horizontal>0.1f||vertical>0.1f)
-        walk.Play();
-        else
+        if((horizontal!=0.0f||vertical!=0.0f)&&!music)
         {
-            walk.Stop();
+            walk.Play();
+            music=true;
+        }
+        else if(horizontal==0.0f&&vertical==0.0f)
+        {
+            walk.Pause();
+            music=false;
         }
     }
 

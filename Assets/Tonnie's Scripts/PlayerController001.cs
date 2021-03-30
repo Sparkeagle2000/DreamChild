@@ -16,6 +16,7 @@ public class PlayerController001 : MonoBehaviour
     public bool onGround=true;
     public bool growth=true;
     public bool normal=false;
+    public float count=5.0f;
 
     private TimeManager timemanager;
     // Start is called before the first frame update
@@ -38,11 +39,11 @@ public class PlayerController001 : MonoBehaviour
                 onGround=false;
             }
                 //Attack script for attack
-            if (Input.GetKeyDown(fire) && Time.time > nextFire)
-            {
-                nextFire=Time.time+fireRate;
-                Instantiate (shot, shotSpawn.position, shotSpawn.rotation);
-            }
+            //if (Input.GetKeyDown(fire) && Time.time > nextFire)
+            //{
+            //    nextFire=Time.time+fireRate;
+            //    Instantiate (shot, shotSpawn.position, shotSpawn.rotation);
+            //}
         
         /*if(Input.GetKeyDown(KeyCode.F))
         {
@@ -60,14 +61,28 @@ public class PlayerController001 : MonoBehaviour
             }
         }*/
 
-        if(Input.GetKeyDown(KeyCode.Q)) 
+        if(Input.GetKeyDown(KeyCode.F)&& !timemanager.TimeIsStopped) 
         {
             timemanager.StopTime();
 
         }
-        if(Input.GetKeyDown(KeyCode.E) && timemanager.TimeIsStopped) 
+        else if(Input.GetKeyDown(KeyCode.F) && timemanager.TimeIsStopped) 
         {
             timemanager.ContinueTime();
+
+        }   
+        if(count<=0.0f)
+        {
+            timemanager.ContinueTime();
+        }
+        if(!timemanager.TimeIsStopped) 
+        {
+            count+=Time.deltaTime;
+
+        }
+        if(timemanager.TimeIsStopped) 
+        {
+            count-=Time.deltaTime;
 
         }   
     }

@@ -5,13 +5,15 @@ using UnityEngine;
 public class FloatingBlocks : MonoBehaviour
 {
     Vector3 up, down;
+    float offset;
     float speed=0.0f;
     bool forward=true,back=false;
     // Start is called before the first frame update
     void Start()
     {
-        up=new Vector3(transform.position.x, transform.position.y+0.5f, transform.position.z);
-        down=new Vector3(transform.position.x, transform.position.y-0.5f, transform.position.z);
+        offset=Random.Range(0.0f,0.5f);
+        up=new Vector3(transform.position.x, transform.position.y+0.5f+offset, transform.position.z);
+        down=new Vector3(transform.position.x, transform.position.y-0.5f-offset, transform.position.z);
     }
 
     // Update is called once per frame

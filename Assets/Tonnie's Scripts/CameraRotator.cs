@@ -21,7 +21,7 @@ public class CameraRotator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(BearWin.win)
+        //if(BearWin.win)
             timeCounter+=(Time.deltaTime)*speed;
             x= Mathf.Cos(timeCounter)*width;
             z= Mathf.Sin(timeCounter)*width;

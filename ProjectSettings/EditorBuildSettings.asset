@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Nightmare Stage.unity
+    guid: 705d0604b9689c8418bb75422a5eea26
   m_configObjects: {}

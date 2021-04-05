@@ -10,19 +10,24 @@ public class PlayerController001 : MonoBehaviour
     public float fireRate;
     public KeyCode fire;
     public KeyCode jump;
+    public AudioSource walk;
 
     private float nextFire;
     public Rigidbody rb;
     public bool onGround=true;
     public bool growth=true;
     public bool normal=false;
+    public float count=5.0f;
+    public AudioClip footsteps;
+    bool music=false;
 
     private TimeManager timemanager;
     // Start is called before the first frame update
     void Start()
     {
         timemanager = GameObject.FindGameObjectWithTag("TimeManager").GetComponent<TimeManager>();
-        //rb=GetComponent<Rigidbody>();
+        rb=GetComponent<Rigidbody>();
+
     }
 
     // Update is called once per frame
@@ -33,18 +38,18 @@ public class PlayerController001 : MonoBehaviour
             transform.Translate(new Vector3(horizontal, 0, vertical) * (speed * Time.deltaTime));
             if(Input.GetKeyDown(jump)&&onGround)
             {
-                Debug.Log("jumping");
+                //Debug.Log("jumping");
                 rb.AddForce(new Vector3(0,7,0), ForceMode.Impulse);
                 onGround=false;
             }
                 //Attack script for attack
-            if (Input.GetKeyDown(fire) && Time.time > nextFire)
-            {
-                nextFire=Time.time+fireRate;
-                Instantiate (shot, shotSpawn.position, shotSpawn.rotation);
-            }
+            //if (Input.GetKeyDown(fire) && Time.time > nextFire)
+            //{
+            //    nextFire=Time.time+fireRate;
+            //    Instantiate (shot, shotSpawn.position, shotSpawn.rotation);
+            //}
         
-        if(Input.GetKeyDown(KeyCode.F))
+        /*if(Input.GetKeyDown(KeyCode.F))
         {
             if(growth)
             {
@@ -58,18 +63,42 @@ public class PlayerController001 : MonoBehaviour
                 normal=false;
                 growth=true;
             }
-        }
+        }*/
 
-        if(Input.GetKeyDown(KeyCode.Q)) 
+        if(Input.GetKeyDown(KeyCode.F)&& !timemanager.TimeIsStopped) 
         {
             timemanager.StopTime();
 
         }
-        if(Input.GetKeyDown(KeyCode.E) && timemanager.TimeIsStopped) 
+        else if(Input.GetKeyDown(KeyCode.F) && timemanager.TimeIsStopped) 
         {
             timemanager.ContinueTime();
 
         }   
+        if(count<=0.0f)
+        {
+            timemanager.ContinueTime();
+        }
+        if(!timemanager.TimeIsStopped && count<5.0f) 
+        {
+            count+=Time.deltaTime;
+
+        }
+        if(timemanager.TimeIsStopped) 
+        {
+            count-=Time.deltaTime;
+
+        }   
+        if((horizontal!=0.0f||vertical!=0.0f)&&!music)
+        {
+            walk.Play();
+            music=true;
+        }
+        else if(horizontal==0.0f&&vertical==0.0f)
+        {
+            walk.Pause();
+            music=false;
+        }
     }
 
     private void OnCollisionEnter(Collision other)

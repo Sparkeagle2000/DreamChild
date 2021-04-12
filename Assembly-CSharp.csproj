@@ -65,8 +65,8 @@
      <Compile Include="Assets\Tonnie&apos;s Scripts\PlayerController001.cs" />
      <Compile Include="Assets\Tonnie&apos;s Scripts\CameraRotator.cs" />
      <Compile Include="Assets\Tonnie&apos;s Scripts\FallingBlock.cs" />
-     <Compile Include="Assets\Tonnie&apos;s Scripts\BearWin.cs" />
      <Compile Include="Assets\TimeBody.cs" />
+     <Compile Include="Assets\Tonnie&apos;s Scripts\DoggoScript.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/Sparkeagle/Documents/GitHub/DreamChild/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>

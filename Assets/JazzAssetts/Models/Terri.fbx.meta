@@ -3,7 +3,12 @@ guid: 6ebe85118c908dd4cb0fa0e129c0a796
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: terrivertslice
+    second: {fileID: 2100000, guid: 6cd0eebfafaa17a4e89c389b3c9dfd55, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

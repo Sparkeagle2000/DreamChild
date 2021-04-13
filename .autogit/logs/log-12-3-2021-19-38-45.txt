@@ -1,0 +1,18 @@
+-------------------- Auto-Git Log --------------------
+		Mon Apr 12 2021 19:38:45 GMT-0400 (Eastern Daylight Time)
+------------------------------------------------------
+
+Modified files:
+* Library/shadercompiler-UnityShaderCompiler.exe0.log
+
+
+Created files:
+* .autogit/logs/log-12-3-2021-19-8-28.txt
+* Library/Artifacts/47/476a2c198dd912ba2b7acbb2f03bf354
+* Temp/UnityTempFile-82bab6ac22a24d744bf304a2e2f7bcee
+
+
+Deleted files:
+
+
+Renamed files:

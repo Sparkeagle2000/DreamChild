@@ -1,0 +1,51 @@
+-------------------- Auto-Git Log --------------------
+		Mon Apr 12 2021 19:08:28 GMT-0400 (Eastern Daylight Time)
+------------------------------------------------------
+
+Modified files:
+* Assembly-CSharp.csproj
+* Library/ArtifactDB
+* Library/PackageCache/com.unity.ide.rider@1.2.1/package.json
+* Library/PackageManager/ProjectCache
+* Library/PackageManager/ProjectCache.md5
+* Library/SourceAssetDB
+* Library/shadercompiler-UnityShaderCompiler.exe0.log
+* obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache
+
+
+Created files:
+* Assets/AttackScript.cs
+* Assets/AttackScript.cs.meta
+* Assets/EnemyHP.cs
+* Assets/EnemyHP.cs.meta
+* Library/Artifacts/10/1036c63cbeede9ecf6d4409570a20bb1
+* Library/Artifacts/3f/3f0884b66c2fac6a7b912e4de3611bfd
+* Library/Artifacts/45/45973ec96cc1519af707c1ec2aece5bb
+* Library/Artifacts/6b/6b7cbf03efd96c517edcd8c51561b41b
+* Library/Artifacts/6d/6d78afd1f3457df1c46d4fa992944312
+* Library/Artifacts/6e/6e684505bb577b3a05053ac8534275c4
+* Library/Artifacts/74/7425799f72d2fb4b882fd1bea00af421
+* Library/Artifacts/7b/7be1c8e5e73b4e5751cb89e33e3eed2a
+* Library/Artifacts/7e/7e3bc91e324ba85678b9d3dff5cd1e7c
+* Library/Artifacts/85/859df0a54db478a1ffc44c80dc8c077b
+* Library/Artifacts/97/97228d3ebe7957af1f98979efff34c54
+* Library/Artifacts/99/997f97a4a863eb23e30942ac7afe6bb3
+* Library/Artifacts/a0/a0a8fcda9e6b07e61b9d0fb3bd4a4745
+* Library/Artifacts/aa/aa5f3bcd055d75cbc3009cb9aaf2205a
+* Library/Artifacts/ab/ab78db84ca39e655095a05d3302cd660
+* Library/Artifacts/b0/b0d8232f7147a40af2a08e1e9d9dbace
+* Library/Artifacts/e6/e67f15cf0a5135b5749fe4173352fffb
+* Library/Artifacts/ea/eaa40f404f736b2c774e8d49b8ae9d7d
+* Library/Artifacts/ec/ec190ba47a2dc608585b5503ea8c73ae
+* Library/Artifacts/f5/f5cc6abc3d5674dfc8379122fb8677b8
+* Library/Artifacts/fa/fa7e8d65bd2092cfd5f7f73261e13722
+* Library/Artifacts/fb/fb89cfb078da8ec86c7dbe45fc72c7a9
+* Library/EditorInstance.json
+* Temp/UnityTempFile-1db031ebd22b9094ab0caf5a9b6e5daf
+
+
+Deleted files:
+* Library/ScriptAssemblies/BuiltinAssemblies.stamp
+
+
+Renamed files:

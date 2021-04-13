@@ -30,16 +30,20 @@ public class AttackScript : MonoBehaviour {
     }
 
     void Attack () {
+        //Attack Animation (make sure create an attack trigger for Terri in animator)
         animator.SetTrigger ("Attack");
 
+        //Hit box
         Collider[] hitEnemies = Physics.OverlapSphere (attackPoint.position, attackRange, enemyLayers);
 
+        //Damagaing Enemies
         foreach (Collider enemy in hitEnemies) {
             enemy.GetComponent<EnemyHP> ().TakeDamage (attackDamage);
         }
 
     }
 
+    // Show hit box Gizmos
     void OnDrawGizmosSelected () {
         if (attackPoint == null)
             return;

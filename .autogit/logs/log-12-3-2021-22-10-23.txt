@@ -1,0 +1,84 @@
+-------------------- Auto-Git Log --------------------
+		Mon Apr 12 2021 22:10:23 GMT-0400 (Eastern Daylight Time)
+------------------------------------------------------
+
+Modified files:
+* Assets/EnemyHP.cs
+* Library/ArtifactDB
+* Library/ScriptAssemblies/Assembly-CSharp.dll
+* Library/ScriptAssemblies/Assembly-CSharp.pdb
+* Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
+* Library/ScriptAssemblies/Unity.CollabProxy.Editor.pdb
+* Library/ScriptAssemblies/Unity.Rider.Editor.dll
+* Library/ScriptAssemblies/Unity.Rider.Editor.pdb
+* Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+* Library/ScriptAssemblies/Unity.TextMeshPro.Editor.pdb
+* Library/ScriptAssemblies/Unity.TextMeshPro.dll
+* Library/ScriptAssemblies/Unity.TextMeshPro.pdb
+* Library/ScriptAssemblies/Unity.Timeline.Editor.dll
+* Library/ScriptAssemblies/Unity.Timeline.Editor.pdb
+* Library/ScriptAssemblies/Unity.Timeline.dll
+* Library/ScriptAssemblies/Unity.Timeline.pdb
+* Library/ScriptAssemblies/Unity.VSCode.Editor.dll
+* Library/ScriptAssemblies/Unity.VSCode.Editor.pdb
+* Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll
+* Library/ScriptAssemblies/Unity.VisualStudio.Editor.pdb
+* Library/ScriptAssemblies/UnityEditor.TestRunner.dll
+* Library/ScriptAssemblies/UnityEditor.TestRunner.pdb
+* Library/ScriptAssemblies/UnityEditor.UI.dll
+* Library/ScriptAssemblies/UnityEditor.UI.pdb
+* Library/ScriptAssemblies/UnityEngine.TestRunner.dll
+* Library/ScriptAssemblies/UnityEngine.TestRunner.pdb
+* Library/ScriptAssemblies/UnityEngine.UI.dll
+* Library/ScriptAssemblies/UnityEngine.UI.pdb
+* Library/SourceAssetDB
+* Library/StateCache/MainStageHierarchy/4d/4d2a36d9faf65734f0bbefb3ee623532.json
+* Library/StateCache/SceneView/8c/8cd7c613bf844de3b80696e27a479d5e.json
+* Library/shadercompiler-UnityShaderCompiler.exe0.log
+
+
+Created files:
+* .autogit/logs/log-12-3-2021-21-40-2.txt
+* Library/EditorInstance.json
+* Temp/UnityTempFile-027ed9bd25b5ea240a60a020c3d890f8
+* Temp/UnityTempFile-1dd698659da142c45b5e1c57a9131f6b
+* Temp/UnityTempFile-2ca9fa102185a0842bcad9c14be7075a
+* Temp/UnityTempFile-3a251943836b0bb49a829ddc4bf71fc2
+* Temp/UnityTempFile-3b1e9c821b210434da7eb2a828d9bdeb
+* Temp/UnityTempFile-4aa07f7003a126e429ef8ecc67b5ca82
+* Temp/UnityTempFile-4b75ca5f585f2334ca39666900f5ff7d
+* Temp/UnityTempFile-5b1bd94134448854d8afc997a1f5619a
+* Temp/UnityTempFile-60f7b8aece2bb9f438b0c9616bc884fc
+* Temp/UnityTempFile-99baf218fcf35a34292ba11e27f88815
+* Temp/UnityTempFile-a79bda9a2d684c4448db141c813d7e0b
+* Temp/UnityTempFile-d39206cbbbbe32846979d77e9d32c979
+* Temp/UnityTempFile-e2f6998210135e8409c12849c05e028d
+* Temp/UnityTempFile-e7dd77e1b4ae3a14a84b106b920fcfe7
+* Temp/UnityTempFile-e89a8c7c9f5cb014e82f41f17437fd2c
+* Temp/UnityTempFile-ec36225d25f3fbc478a5447dd5250167
+* Temp/UnityTempFile-f59c07d713dd9e84d8740dc04ac6ee23
+* Temp/__Backupscenes/0.backup
+
+
+Deleted files:
+* Library/Artifacts/16/16127dc046768109fd75d702369005ee
+* Library/Artifacts/25/25bd209f95bf975a91194113ad6480c8
+* Library/Artifacts/27/270e907c6209d55edb757f9fb6de90fa
+* Library/Artifacts/49/49270954b3f0811c0cad053f92eb81a3
+* Library/Artifacts/4a/4acd25e76ed9bc92dbd829f0ce59b9bb
+* Library/Artifacts/51/51ec6ba1797b4a2b44b7ff41f13b1efa
+* Library/Artifacts/5e/5ecc77f75101d6782377e1a629f50296
+* Library/Artifacts/7b/7b807d502dd1aec03a62c8133e2e1e89
+* Library/Artifacts/92/92ccb004d63c57d6aeb7cf277936ec5e
+* Library/Artifacts/b1/b1a371bf09ca1122f77745e0085e9349
+* Library/Artifacts/cc/cc0df649bc33b55f3696e015d4a1bd2a
+* Library/Artifacts/ce/ce47ca0960c10b05fe2e6e1900badc4c
+* Library/Artifacts/d5/d5168f54def82f195fce22b877686442
+* Library/Artifacts/e3/e33bbba81acd563a6f62a1e2f5c571b2
+* Library/Artifacts/f5/f5d76687493992e021b4e9b57a5401a8
+* Library/Artifacts/fa/fa822fbf43f3e5c5b064c0b09725b61e
+
+
+Renamed files:
+* [object Object]
+* [object Object]

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HP : MonoBehaviour {
+public class EnemyHP : MonoBehaviour {
     public Animator animator;
     public int maxHealth = 100;
     int currentHealth;
@@ -15,7 +15,8 @@ public class HP : MonoBehaviour {
 
     public void TakeDamage (int damage) {
         currentHealth -= damage;
-
+        
+        //Need the Hurt Trigger in the enemy animator
         animator.SetTrigger ("Hurt");
         if (currentHealth <= 0) {
             Die ();
@@ -24,7 +25,7 @@ public class HP : MonoBehaviour {
 
     void Die () {
         Debug.Log ("Enemy Died!");
-        //Die Animation
+        //Die Animation (need to create the IsDead bool)
         animator.SetBool ("IsDead", true);
         GetComponent<Collider> ().enabled = false;
         this.enabled = false;

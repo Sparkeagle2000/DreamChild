@@ -24,6 +24,7 @@ public class HP : MonoBehaviour {
 
     void Die () {
         Debug.Log ("Enemy Died!");
+        //Die Animation
         animator.SetBool ("IsDead", true);
         GetComponent<Collider> ().enabled = false;
         this.enabled = false;

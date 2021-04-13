@@ -1,0 +1,26 @@
+-------------------- Auto-Git Log --------------------
+		Mon Apr 12 2021 21:40:02 GMT-0400 (Eastern Daylight Time)
+------------------------------------------------------
+
+Modified files:
+* Library/ArtifactDB
+* Library/CurrentLayout-default.dwlt
+* Library/InspectorExpandedItems.asset
+* Library/LastSceneManagerSetup.txt
+* Library/SceneVisibilityState.asset
+* Library/SourceAssetDB
+* Library/StateCache/SceneView/8c/8cd7c613bf844de3b80696e27a479d5e.json
+* ProjectSettings/TagManager.asset
+
+
+Created files:
+* .autogit/logs/log-12-3-2021-21-9-42.txt
+
+
+Deleted files:
+* Library/EditorInstance.json
+* Temp/UnityTempFile-1db031ebd22b9094ab0caf5a9b6e5daf
+* Temp/UnityTempFile-82bab6ac22a24d744bf304a2e2f7bcee
+
+
+Renamed files:

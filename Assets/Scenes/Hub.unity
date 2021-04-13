@@ -7143,7 +7143,7 @@ PrefabInstance:
     - target: {fileID: 1864062094349926554, guid: 27516d6da8c39a34080ef9ef1cbb4266,
         type: 3}
       propertyPath: m_Name
-      value: Nightmare
+      value: Bed_Large
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27516d6da8c39a34080ef9ef1cbb4266, type: 3}
@@ -7157,7 +7157,7 @@ PrefabInstance:
     - target: {fileID: 1489722553836840741, guid: d8b7ecd2262968e41b52946774f0c5cf,
         type: 3}
       propertyPath: m_Name
-      value: Dojo
+      value: Couch_Large
       objectReference: {fileID: 0}
     - target: {fileID: 2298909942174023071, guid: d8b7ecd2262968e41b52946774f0c5cf,
         type: 3}
@@ -8651,7 +8651,7 @@ PrefabInstance:
     - target: {fileID: 7027818122032926600, guid: 7c6fe40379027e940a14e7e22a817dc6,
         type: 3}
       propertyPath: m_Name
-      value: Chase
+      value: Bed_Small
       objectReference: {fileID: 0}
     - target: {fileID: 7695530211108132146, guid: 7c6fe40379027e940a14e7e22a817dc6,
         type: 3}
